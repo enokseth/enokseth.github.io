@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  background-color:#525174;
+  width: 400px;
+  height: 720px;
+  background-image: url('./img/130.png/');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+header {
+  z-index: 0;
+  box-sizing: border-box;
+  position:relative;
+  width: 100vw;
+  height: 70px;
+  background-color: #282c2a;
+
+}
+.barre-refresh {
+  z-index: 0;
+  box-sizing: border-box;
+  position:absolute;
+  background-color: rgb(251, 255, 8);
+  width: 100vw;
+  height: 4px;
+  border-bottom: 1px solid rgb(253, 251, 251);
+}
+.hamburger {
+  z-index: 1;
+  position: absolute;
+  width: 80px;
+  height: 68px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#checkbox {
+  display: none;
+}
+.line { 
+  z-index: 3;
+  position:absolute;
+  top: 29px;
+  width: 40px;
+  height: 6px;
+  background-color: #348AA7;
+  border-radius: 3px;
+  transition: 
+  transform .25s, opacity .35s;
+  box-shadow: rgba(217, 255, 1, 0.4) -5px 5px, rgba(124, 202, 50, 0.3) -10px 10px, ;
+}
+.line--top {
+  transform: translateY(-20px);
+}
+.line--left {
+  transform: translateY(20px);
+}
+.line--bottom {
+  transform: translateX(10px);
+}
+.line--right {
+  transform: translateX(20px);
+}
+.panel-1 {
+  box-sizing: border-box;
+  left: 2px;
+  top: 2px;
+  position: absolute;
+  display: none;
+  background-color: black
+  
+}
+#checkbox:checked~.line--top  {
+  transform: translateY(+20px);
+}
+#checkbox:checked~.line--left {
+  transform: rotate(290deg);
+}
+#checkbox:checked~.line--bottom {
+  transform: translateY(-20px);
+  animation: flowi 1s ease-in-out infinite;
+}
+@keyframes flowi {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(+20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+  
+#checkbox:checked~.line--right {
+  transform: rotate(-10deg);
+  transform: translateX(-8px);
+  transform: rotateX(360deg);
+  animation: flow 1s ease-in-out infinite;
+}
+@keyframes flow {
+  0% {
+    transform: translateX(0);
+    transform: translateY(0); 
+  }
+  25% {
+    transform: translateX(0);
+    transform: translateY(0); 
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: translateX(14px);
+    transform: translateY(14px); 
+  }
+  100% {
+    transform: tranlateY(0);
+    background-color: #91ff00;
+  }
+  
+}
+#checkbox:checked~.panel-1{
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  
+}
+#checkbox:checked~.line {
+  z-index: 3;
+  background-color: #348AA7;
+  box-shadow: rgba(105, 87, 79, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(248, 246, 246, 0.09) 0px -3px 5px;
+}
+.flip {
+  position: absolute;
+  z-index: 3;
+  height: 100px;
+  text-align: center;
+  list-style-type: none;
+  display: inline-flex;
+
+}
+/* ========= LFEX LI ANIMATON DECALRATION */
+li {
+  position: relative;
+  z-index: 3;
+  height: 30px;
+  width: 80px;
+  margin: 4px;
+  left: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #E59500;
+  background-color:#348AA7;
+  animation: flex 0.5s ease-in;
+  justify-content: center;
+
+}
+/* animation du bouton caller sur la une classe nominative des LI pour l'integrer */
+.button-85 {
+  padding-top: 0.5em;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #5DD39E;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: #e3e6f3;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #e2ebee71;
+  background-color: #282c2a;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+@keyframes flex {
+  0% {
+    transform: scaleX(0);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: scaleX(1);
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: scaleX(1);
+    transform: rotate(360deg);
+    
+  }
+  75% {
+    transform: scaleX(1);
+    transform: rotate(360deg);
+  }
+}
+main {
+  position:relative;
+  box-sizing: border-box;
+  max-width: 100vw;
+  max-height: 100vh;
+  color: #525174; 
+}
+
+/*============== CUBE INTEGRER ===============*/
+canvas {
+	position: absolute;
+	border: 2px solid rgb(255, 251, 251);
+	background-color: rgb(214, 214, 214);
+  color: white;
+	margin-top: 15px;
+  margin-left: 70px;
+}
+video {
+	display: none;
+}
+ /* =============== MEDIA QUERY ================== */
+
+
+ 
+
+
+
+
+
+
+/*========== barre de rafraichissementn ===========*/
+ 
