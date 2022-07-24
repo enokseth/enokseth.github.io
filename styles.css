@@ -1,14 +1,11 @@
 * {
   box-sizing: border-box;
 }
-html,
 body {
-  z-index: 0;
   margin: 0;
-  padding: 0;
   background-color:#525174;
-  width: 400px;
-  height: 720px;
+  width: 100vw;
+  height: 100vh;
   background-image: url('./img/130.png/');
   background-repeat: no-repeat;
   background-size: cover;
@@ -274,7 +271,14 @@ video {
 }
  /* =============== MEDIA QUERY ================== */
 
-
+ @media screen and (max-width: 600px) {
+  .flip, li, .button-85, .button-85:before {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    left: 0;
+  }
+ 
+ }
  
 
 

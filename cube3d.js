@@ -1,17 +1,17 @@
 var cubeRotation = 0.0;
-// will set to true when video can be copied to texture
+// sera défini sur vrai lorsque la vidéo peut être copiée dans la texture
 var copyVideo = false;
 
 main();
 
 //
-// Start here
+// Démare ici 
 //
 function main() {
   const canvas = document.querySelector('#glcanvas');
   const gl = canvas.getContext('webgl');
 
-  // If we don't have a GL context, give up now
+  // Si nous n'avons pas de contexte GL, abandonnez maintenant |
 
   if (!gl) {
     alert('Unable to initialize WebGL. Your browser or machine may not support it.');
@@ -83,7 +83,7 @@ function main() {
 
   const texture = initTexture(gl);
 
-  const video = setupVideo('Firefox.mp4');
+  const video = setupVideo('video.mp4');
 
   var then = 0;
 
