@@ -30,27 +30,32 @@
             <h2>Qui suis-je</h2>
             <p>Je suis un développeur passionné par la sécurité informatique et les environnements techniques complexes. Depuis mon plus jeune âge, j'ai exploré divers langages et outils pour comprendre les rouages de la technologie. Ma curiosité m'a conduit à approfondir mes compétences dans des domaines tels que la cybersécurité, le développement backend, et la création d'outils pour les équipes Red Team. Aujourd'hui, je me concentre sur l'apprentissage approfondi de technologies comme Java et Android, avec pour objectif de devenir architecte logiciel. Mon but est de concevoir des solutions qui allient innovation, sécurité et robustesse, tout en apportant une réelle valeur ajoutée dans le monde numérique.</p>
         </section>
-        
 
+        <!-- Section Projets avec redirection vers les sous-sites -->
         <section id="projects" class="section">
             <h2>Mes Projets</h2>
             <div class="project-grid">
-                <div class="project-card" tabindex="0">
-                    <img src="./bytesweb/index.html" alt="Byte and Bits in positional Byte Preview">
+                <!-- Carte pour Byte and Bits, redirige vers bytesweb -->
+                <div class="project-card" tabindex="0" onclick="window.location.href='./bytesweb/index.html'">
+                    <img src="https://via.placeholder.com/100" alt="Byte and Bits in Positional Byte Preview">
                     <div class="card-content">
                         <h3>Byte and Bits in Positional Byte</h3>
                         <p>Animation représentant un byte avec calcul positionnel des bits.</p>
                     </div>
                 </div>
-                <div class="project-card" tabindex="0">
-                    <img src="https://via.placeholder.com/300" alt="Xex Panel Preview">
+
+                <!-- Carte pour Xex Panel, redirige vers xex -->
+                <div class="project-card" tabindex="0" onclick="window.location.href='./xex/index.html'">
+                    <img src="https://via.placeholder.com/100" alt="Xex Panel Preview">
                     <div class="card-content">
                         <h3>Xex Panel</h3>
                         <p>Outil d'automatisation d'attaques sur des sites, conçu avec évasion et pivots, en Python.</p>
                     </div>
                 </div>
-                <div class="project-card" tabindex="0">
-                    <img src="https://via.placeholder.com/300" alt="Fragment Preview">
+
+                <!-- Carte pour Fragment, redirige vers fragment -->
+                <div class="project-card" tabindex="0" onclick="window.location.href='./fragment/index.html'">
+                    <img src="https://via.placeholder.com/100" alt="Fragment Preview">
                     <div class="card-content">
                         <h3>Fragment</h3>
                         <p>Application Android codée en Java, qui permet de convertir des valeurs binaires.</p>
@@ -59,18 +64,17 @@
             </div>
         </section>
 
+        <!-- Autres sections -->
         <section id="parcours" class="section">
             <h2>Mon Parcours</h2>
             <p>Dès l'âge de 9 ans, je me suis plongé dans l'univers du code, en apprenant notamment le Perl et le Ruby, deux langages moins populaires aujourd'hui en raison de certaines vulnérabilités de sécurité. Je m'intéressais aussi au "white hat hacking" (hacktivisme éthique) et j'utilisais Kali Linux pour explorer le monde de la cybersécurité. Avec des amis, nous avons mené quelques expérimentations qui ont parfois causé des interruptions involontaires de petites infrastructures. Ces expériences m'ont permis de mieux comprendre les enjeux de la sécurité informatique. Après une pause, j'ai décidé de reprendre sérieusement le développement en 2021, en suivant un BTS intensif en seulement 11 mois avec l'aide d'un coach DevOps de L'Access Code School et d'un ancien élève de l'école 42. Cette formation m'a permis de consolider mes compétences et de poser des bases solides pour ma carrière dans le développement et la sécurité informatique.</p>
         </section>
-        
-        
+
         <section id="preferences" class="section">
             <h2>Mes Préférences</h2>
             <p>Mes centres d'intérêt se situent principalement autour de la sécurité informatique, de la conception logicielle, et des outils de contrôle utilisés dans les environnements de type "Red Team". Passionné par la cybersécurité, j'ai déjà exploré l'univers des tests d'intrusion et de l'utilisation de Kali Linux dans le cadre d'un hacktivisme éthique. Cependant, je souhaite désormais approfondir mes compétences techniques en me concentrant sur une formation de développeur Java et Android. Mon objectif est de maîtriser la conception de logiciels robustes et de créer des outils spécialisés tels que des serveurs de contrôle et des infrastructures backend dédiées aux environnements sécurisés. En tant qu'architecte logiciel, je vise à concevoir des solutions innovantes qui allient performance, sécurité, et évolutivité.</p>
         </section>
-        
+
     </div>
-    <script src="./script.js"></script>
 </body>
 </html>
