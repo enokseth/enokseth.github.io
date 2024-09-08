@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Sci-Fi Moderne</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Enok Seth</h1>
+        <div class="header-content">
+            <img class="avatar" src="./image/1683293170725.jpeg" alt="Avatar Enok Seth">
+            <h1>Enok Seth</h1>
+            <img class="avatar" src="./image/84675089.jpeg" alt="Second Avatar">
+        </div>
     </header>
     <nav>
         <a href="#about">Qui suis-je</a>
@@ -20,37 +24,55 @@
     <div class="container">
         <section id="about" class="section">
             <h2>Qui suis-je</h2>
-            <p>Explorateur du code et architecte du futur numérique, je façonne des expériences web à la frontière de l'imagination et de la technologie. Mon objectif : repousser les limites du possible dans le cyberespace.</p>
+            <p>Je suis un développeur passionné par la sécurité informatique et les environnements techniques complexes. Depuis mon plus jeune âge, j'ai exploré divers langages et outils pour comprendre les rouages de la technologie. Ma curiosité m'a conduit à approfondir mes compétences dans des domaines tels que la cybersécurité, le développement backend, et la création d'outils pour les équipes Red Team. Aujourd'hui, je me concentre sur l'apprentissage approfondi de technologies comme Java et Android, avec pour objectif de devenir architecte logiciel. Mon but est de concevoir des solutions qui allient innovation, sécurité et robustesse, tout en apportant une réelle valeur ajoutée dans le monde numérique.</p>
         </section>
+        
+
         <section id="projects" class="section">
             <h2>Mes Projets</h2>
             <div class="project-grid">
-                <div class="project-card floating" tabindex="0" onclick="window.location.href='https://github.com/username/project1'">
-                    <h3>NeoMatrix</h3>
-                    <p>Interface neurale permettant de naviguer dans un cyberespace tridimensionnel.</p>
+                <div class="project-card" tabindex="0">
+                    <img src="https://via.placeholder.com/300" alt="Byte and Bits in positional Byte Preview">
+                    <div class="card-content">
+                        <h3>Byte and Bits in Positional Byte</h3>
+                        <p>Animation représentant un byte avec calcul positionnel des bits.</p>
+                    </div>
                 </div>
-                <div class="project-card floating" tabindex="0" onclick="window.location.href='https://github.com/username/project2'">
-                    <h3>Quantum Code</h3>
-                    <p>Editeur de code quantique pour programmer dans des réalités parallèles.</p>
+                <div class="project-card" tabindex="0">
+                    <img src="https://via.placeholder.com/300" alt="Xex Panel Preview">
+                    <div class="card-content">
+                        <h3>Xex Panel</h3>
+                        <p>Outil d'automatisation d'attaques sur des sites, conçu avec évasion et pivots, en Python.</p>
+                    </div>
                 </div>
-                <div class="project-card floating" tabindex="0" onclick="window.location.href='https://github.com/username/project3'">
-                    <h3>HoloWeb</h3>
-                    <p>Plateforme de création de sites web holographiques interactifs.</p>
+                <div class="project-card" tabindex="0">
+                    <img src="https://via.placeholder.com/300" alt="Fragment Preview">
+                    <div class="card-content">
+                        <h3>Fragment</h3>
+                        <p>Application Android codée en Java, qui permet de convertir des valeurs binaires.</p>
+                    </div>
                 </div>
-                <div class="project-card floating" tabindex="0" onclick="window.location.href='https://github.com/username/project4'">
-                    <h3>CyberSynth</h3>
-                    <p>Synthétiseur virtuel générant de la musique à partir d'ondes cérébrales.</p>
+                <div class="project-card" tabindex="0">
+                    <img src="https://via.placeholder.com/300" alt="CyberSynth Preview">
+                    <div class="card-content">
+                        <h3>CyberSynth</h3>
+                        <p>Synthétiseur virtuel générant de la musique à partir d'ondes cérébrales.</p>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section id="parcours" class="section">
             <h2>Mon Parcours</h2>
-            <p>Mon odyssée dans le cyberespace a débuté il y a une décennie. Depuis, j'ai navigué à travers les méandres du code, exploré les confins de l'intelligence artificielle, et cartographié des territoires inexplorés de la réalité virtuelle. Chaque ligne de code écrite est un pas de plus vers un avenir où la frontière entre le réel et le virtuel s'estompe.</p>
+            <p>Dès l'âge de 9 ans, je me suis plongé dans l'univers du code, en apprenant notamment le Perl et le Ruby, deux langages moins populaires aujourd'hui en raison de certaines vulnérabilités de sécurité. Je m'intéressais aussi au "white hat hacking" (hacktivisme éthique) et j'utilisais Kali Linux pour explorer le monde de la cybersécurité. Avec des amis, nous avons mené quelques expérimentations qui ont parfois causé des interruptions involontaires de petites infrastructures. Ces expériences m'ont permis de mieux comprendre les enjeux de la sécurité informatique. Après une pause, j'ai décidé de reprendre sérieusement le développement en 2021, en suivant un BTS intensif en seulement 11 mois avec l'aide d'un coach DevOps de L'Access Code School et d'un ancien élève de l'école 42. Cette formation m'a permis de consolider mes compétences et de poser des bases solides pour ma carrière dans le développement et la sécurité informatique.</p>
         </section>
+        
+        
         <section id="preferences" class="section">
             <h2>Mes Préférences</h2>
-            <p>Je suis fasciné par l'intersection de la technologie et de la conscience humaine. Mes domaines de prédilection incluent la réalité augmentée, l'intelligence artificielle générative, et les interfaces cerveau-machine. J'adore expérimenter avec des frameworks JavaScript avant-gardistes et explorer de nouvelles façons de tisser des expériences immersives dans la trame du web.</p>
+            <p>Mes centres d'intérêt se situent principalement autour de la sécurité informatique, de la conception logicielle, et des outils de contrôle utilisés dans les environnements de type "Red Team". Passionné par la cybersécurité, j'ai déjà exploré l'univers des tests d'intrusion et de l'utilisation de Kali Linux dans le cadre d'un hacktivisme éthique. Cependant, je souhaite désormais approfondir mes compétences techniques en me concentrant sur une formation de développeur Java et Android. Mon objectif est de maîtriser la conception de logiciels robustes et de créer des outils spécialisés tels que des serveurs de contrôle et des infrastructures backend dédiées aux environnements sécurisés. En tant qu'architecte logiciel, je vise à concevoir des solutions innovantes qui allient performance, sécurité, et évolutivité.</p>
         </section>
+        
     </div>
     <script src="./script.js"></script>
 </body>
