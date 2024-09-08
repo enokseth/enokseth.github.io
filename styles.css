@@ -33,11 +33,22 @@ header {
     justify-content: center;
 }
 
+.avatar-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.avatar-link:focus, 
+.avatar-link:hover {
+    transform: scale(1.5);
+    outline: none;
+}
+
 .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin: 0 20px;
+    transition: transform 0.3s ease;
 }
 
 h1 {
