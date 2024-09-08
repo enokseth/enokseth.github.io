@@ -1,0 +1,104 @@
+:root {
+    --neon-blue: #00f3ff;
+    --neon-purple: #9d00ff;
+    --dark-bg: #0a0a0a;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background: var(--dark-bg);
+    color: #fff;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-purple);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px var(--neon-blue);
+}
+.section {
+    margin: 50px 0;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    perspective: 1000px;
+}
+.project-card {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.project-card:hover, .project-card:focus {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0 0 30px var(--neon-purple);
+}
+.project-card h3 {
+    color: var(--neon-blue);
+    margin-top: 0;
+}
+.project-card p {
+    color: #ccc;
+}
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.project-card:hover::before {
+    opacity: 1;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
