@@ -1,46 +1,58 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <title>Enok-Seth Repository</title>
+    <base href="https://github.com/">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-        @media (prefers-color-scheme: dark) {
-            p, h1, h2, h3, h4, h5, h6 {
-                color: #bbb;
-            }
-
-            body {
-                background-color: black;
-            }
-
-            .form-control {
-                color: #bbb !important;
-                background-color: #727272 !important;
-                border: 1px solid #333;
-            }
-        }
-    </style>
+    <title>Portfolio Sci-Fi Moderne</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <header>
+        <h1>Portfolio Sci-Fi</h1>
+    </header>
+    <nav>
+        <a href="#about">Qui suis-je</a>
+        <a href="#projects">Mes Projets</a>
+        <a href="#parcours">Mon Parcours</a>
+        <a href="#preferences">Mes Préférences</a>
+    </nav>
     <div class="container">
-        <h1>&nbsp;</h1>
-        <h1>Enok-Seth Repository</h1>
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-            <div class="btn-group btn-group-justified btn-group-repo">
-                <a class="btn btn-default" rel="nofollow noopener" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://enokseth.github.io/repo/"><img width="25" height="25" src="https://enokseth.github.io/web/cydia.png" class="img-rounded lazy loaded" loading="lazy" data-src="https://enokseth.github.io/web/cydia.png" alt="Cydia" data-was-processed="true"> <p>Cydia</p></a>
-                <a class="btn btn-default" rel="nofollow noopener" href="installer://add/repo=https://enokseth.github.io/repo/"><img width="25" height="25" src="https://enokseth.github.io/web/installer.png" class="img-rounded lazy loaded" loading="lazy" data-src="https://enokseth.github.io/web/installer.png" alt="Installer" data-was-processed="true"> <p>Installer</p></a>
-                <a class="btn btn-default" rel="nofollow noopener" href="sileo://source/https://enokseth.github.io/repo/"><img width="25" height="25" src="https://enokseth.github.io/web/sileo.png" class="img-rounded lazy loaded" loading="lazy" data-src="https://enokseth.github.io/web/sileo.png" alt="Sileo" data-was-processed="true"> <p>Sileo</p></a>
-                <a class="btn btn-default" rel="nofollow noopener" href="zbra://sources/add/https://enokseth.github.io/repo/"><img width="25" height="25" src="https://enokseth.github.io/web/zebra.png" class="img-rounded lazy loaded" loading="lazy" data-src="https://enokseth.github.io/web/zebra.png" alt="Zebra" data-was-processed="true"> <p>Zebra</p></a>
+        <section id="about" class="section">
+            <h2>Qui suis-je</h2>
+            <p>Explorateur du code et architecte du futur numérique, je façonne des expériences web à la frontière de l'imagination et de la technologie. Mon objectif : repousser les limites du possible dans le cyberespace.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>Mes Projets</h2>
+            <div class="project-grid">
+                <div class="project-card floating" tabindex="0" onclick="window.location.href='https://github.com/username/project1'">
+                    <h3>NeoMatrix</h3>
+                    <p>Interface neurale permettant de naviguer dans un cyberespace tridimensionnel.</p>
+                </div>
+                <div class="project-card floating" tabindex="0" onclick="window.location.href='https://github.com/username/project2'">
+                    <h3>Quantum Code</h3>
+                    <p>Editeur de code quantique pour programmer dans des réalités parallèles.</p>
+                </div>
+                <div class="project-card floating" tabindex="0" onclick="window.location.href='https://github.com/username/project3'">
+                    <h3>HoloWeb</h3>
+                    <p>Plateforme de création de sites web holographiques interactifs.</p>
+                </div>
+                <div class="project-card floating" tabindex="0" onclick="window.location.href='https://github.com/username/project4'">
+                    <h3>CyberSynth</h3>
+                    <p>Synthétiseur virtuel générant de la musique à partir d'ondes cérébrales.</p>
+                </div>
             </div>
-        </div>
-        <br>
-        <h3>Support Dev</h3>
-           
+        </section>
+        <section id="parcours" class="section">
+            <h2>Mon Parcours</h2>
+            <p>Mon odyssée dans le cyberespace a débuté il y a une décennie. Depuis, j'ai navigué à travers les méandres du code, exploré les confins de l'intelligence artificielle, et cartographié des territoires inexplorés de la réalité virtuelle. Chaque ligne de code écrite est un pas de plus vers un avenir où la frontière entre le réel et le virtuel s'estompe.</p>
+        </section>
+        <section id="preferences" class="section">
+            <h2>Mes Préférences</h2>
+            <p>Je suis fasciné par l'intersection de la technologie et de la conscience humaine. Mes domaines de prédilection incluent la réalité augmentée, l'intelligence artificielle générative, et les interfaces cerveau-machine. J'adore expérimenter avec des frameworks JavaScript avant-gardistes et explorer de nouvelles façons de tisser des expériences immersives dans la trame du web.</p>
+        </section>
     </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
