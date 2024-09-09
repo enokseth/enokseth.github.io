@@ -45,3 +45,27 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 document.querySelectorAll('.project-card').forEach(card => observer.observe(card));
+
+// Constante pour la hauteur de la barre de navigation
+const navbar = document.querySelector('nav');
+const navbarHeight = navbar.offsetHeight;
+
+// Fonction pour gérer le défilement vers la bonne section en compensant la hauteur de la navigation
+function smoothScrollTo(target) {
+    const section = document.querySelector(target);
+    const sectionPosition = section.offsetTop;
+    
+    window.scrollTo({
+        top: sectionPosition - navbarHeight, // Ajuste la position de défilement en fonction de la hauteur de la barre de navigation
+        behavior: 'smooth' // Défilement fluide
+    });
+}
+
+// Ajouter des gestionnaires d'événements à tous les liens du menu
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Empêche le comportement par défaut de l'ancre
+        const target = this.getAttribute('href');
+        smoothScrollTo(target); // Défile vers la bonne section en compensant
+    });
+});
