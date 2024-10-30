@@ -69,3 +69,15 @@ document.querySelectorAll('nav a').forEach(anchor => {
         smoothScrollTo(target); // Défile vers la bonne section en compensant
     });
 });
+
+
+
+
+// script.js
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
