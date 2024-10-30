@@ -81,6 +81,6 @@ document.querySelectorAll("nav a").forEach((anchor) => {
 //     navLinks.classList.toggle('active');
 // });
 function downloadCV() {
-    const url = "./image/TOM-ARTAUD.pdf"; // Remplacez par le bon chemin du fichier
+    const url = "https://enokseth.github.io/image/TOM-ARTAUD.pdf"; // Remplacez par le bon chemin du fichier
     window.open(url, "_blank");
   }
