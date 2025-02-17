@@ -292,3 +292,50 @@ nav a:hover {
     }
     
 }
+/* Styles pour la grille des playlists */
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Styles pour les cartes de playlists */
+.playlist-card {
+    background-color: var(--light-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+.playlist-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px var(--neon-purple);
+    border-color: var(--neon-purple);
+}
+
+.playlist-card h3 {
+    margin: 10px 0;
+    font-size: 1.8em;
+    color: var(--highlight-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.playlist-card p {
+    color: #ccc;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Styles pour l'iframe YouTube */
+.playlist-card iframe {
+    border-radius: var(--border-radius);
+    border: none;
+}

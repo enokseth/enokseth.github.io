@@ -66,9 +66,12 @@ function smoothScrollTo(target) {
 // Ajouter des gestionnaires d'événements à tous les liens du menu
 document.querySelectorAll("nav a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault(); // Empêche le comportement par défaut de l'ancre
     const target = this.getAttribute("href");
-    smoothScrollTo(target); // Défile vers la bonne section en compensant
+    if (target.startsWith("#")) { // Vérifie si c'est un lien d'ancre
+      e.preventDefault(); // Empêche le comportement par défaut seulement pour les ancres
+      smoothScrollTo(target); // Défile vers la bonne section en compensant
+    }
+    // Pour les autres liens (comme playlists.html), la navigation normale est conservée
   });
 });
 
@@ -89,6 +92,16 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
+
+document.querySelectorAll('.playlist-thumbnail').forEach(thumbnail => {
+  thumbnail.addEventListener('click', () => {
+      const iframe = thumbnail.nextElementSibling;
+      iframe.src = iframe.dataset.src; // Charge l'iframe après le clic
+      thumbnail.style.display = 'none'; // Masque la vignette
+  });
+});
+
 window.addEventListener('load', () => {
   document.body.classList.add('loaded');
 });
+
