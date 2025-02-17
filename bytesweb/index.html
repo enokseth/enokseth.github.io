@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Visualizer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body>
+    <h1>Max 255</h1>
+    <div id="bitContainer">
+        <div class="bit" id="bit7" ondrop="drop(event)" ondragover="allowDrop(event)"><span draggable="true" ondragstart="drag(event)">0</span></div>
+        <div class="bit" id="bit6" ondrop="drop(event)" ondragover="allowDrop(event)"><span draggable="true" ondragstart="drag(event)">0</span></div>
+        <div class="bit" id="bit5" ondrop="drop(event)" ondragover="allowDrop(event)"><span draggable="true" ondragstart="drag(event)">0</span></div>
+        <div class="bit" id="bit4" ondrop="drop(event)" ondragover="allowDrop(event)"><span draggable="true" ondragstart="drag(event)">0</span></div>
+        <div class="bit" id="bit3" ondrop="drop(event)" ondragover="allowDrop(event)"><span draggable="true" ondragstart="drag(event)">0</span></div>
+        <div class="bit" id="bit2" ondrop="drop(event)" ondragover="allowDrop(event)"><span draggable="true" ondragstart="drag(event)">0</span></div>
+        <div class="bit" id="bit1" ondrop="drop(event)" ondragover="allowDrop(event)"><span draggable="true" ondragstart="drag(event)">0</span></div>
+        <div class="bit" id="bit0" ondrop="drop(event)" ondragover="allowDrop(event)"><span draggable="true" ondragstart="drag(event)">0</span></div>
+    </div>
+    <div id="powersContainer">
+        <div class="power">2^7</div>
+        <div class="power">2^6</div>
+        <div class="power">2^5</div>
+        <div class="power">2^4</div>
+        <div class="power">2^3</div>
+        <div class="power">2^2</div>
+        <div class="power">2^1</div>
+        <div class="power">2^0</div>
+    </div>
+    <input type="number" id="decimalInput" placeholder="Enter a decimal value (0-255)" min="0" max="255">
+    <div id="buttonsContainer">
+        <button onclick="convertAndAnimate()">Convert</button>
+        <button onclick="setRandomValue()">Random</button>
+    </div>
+    <p id="errorMessage"></p>
+    <p>Binary: <span id="binaryOutput"></span></p>
+    <p>Decimal: <span id="decimalOutput"></span></p>
+    <script src="./app.js"></script>
+</body>
+</html>
