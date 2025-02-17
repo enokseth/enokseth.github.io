@@ -87,8 +87,11 @@ navLinks.querySelectorAll('a').forEach(link => {
         hamburger.classList.remove('active');
         navLinks.classList.remove('active');
     });
+<<<<<<< HEAD
 });
 
 window.addEventListener('load', () => {
   document.body.classList.add('loaded');
+=======
+>>>>>>> 5d970a7e3152982327a0494616c01ba66aa0f3e4
 });

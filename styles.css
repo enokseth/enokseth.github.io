@@ -145,7 +145,15 @@ nav a:hover {
 
 /* Styles pour le menu mobile */
 .nav-links.mobile {
+<<<<<<< HEAD
     display: flex;
+=======
+<<<<<<< HEAD
+    display: flex;
+=======
+    display: none;
+>>>>>>> ddd569952bc1f1edc81775e9632cc12b69bc550a
+>>>>>>> 5d970a7e3152982327a0494616c01ba66aa0f3e4
     position: fixed;
     top: 0;
     left: 0;
@@ -157,6 +165,10 @@ nav a:hover {
     justify-content: center;
     padding: 20px;
     z-index: 1000;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5d970a7e3152982327a0494616c01ba66aa0f3e4
     -webkit-transform: translateX(100%); /* Pour Safari */
     -moz-transform: translateX(100%); /* Pour Firefox */
     transform: translateX(100%);
@@ -169,6 +181,16 @@ nav a:hover {
 .nav-links.mobile.active {
     -webkit-transform: translateX(0); /* Pour Safari */
     -moz-transform: translateX(0); /* Pour Firefox */
+<<<<<<< HEAD
+=======
+=======
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links.mobile.active {
+>>>>>>> ddd569952bc1f1edc81775e9632cc12b69bc550a
+>>>>>>> 5d970a7e3152982327a0494616c01ba66aa0f3e4
     transform: translateX(0);
 }
 
