@@ -28,12 +28,24 @@
     </header>
     <!-- Menu Burger -->
     <nav>
-      <a href="#about">Qui suis-je</a>
-      <a href="#projects">Mes Projets</a>
-      <a href="#parcours">Mon Parcours</a>
-      <a href="#preferences">Mes Préférences</a>
-      <a href="#cv">Télécharger mon CV</a>
-    </nav>
+      <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <div class="nav-links">
+          <a href="#about">Qui suis-je</a>
+          <a href="#projects">Mes Projets</a>
+          <a href="#parcours">Mon Parcours</a>
+          <a href="#preferences">Mes Préférences</a>
+      </div>
+      <div class="nav-links mobile">
+          <a href="#about">Qui suis-je</a>
+          <a href="#projects">Mes Projets</a>
+          <a href="#parcours">Mon Parcours</a>
+          <a href="#preferences">Mes Préférences</a>
+      </div>
+  </nav>
     <div class="container">
       <section id="about" class="section">
         <h2>Qui suis-je</h2>
@@ -143,11 +155,7 @@
           solutions innovantes qui allient performance, sécurité, et
           évolutivité.
         </p>
-      </section>
-      <section id="cv">
-        <h2>Télécharge mon CV !</h2>
-        <button onclick="downloadCV()" class="download-btn">Télécharger mon CV</button>
-      </section>         
+      </section> 
     </div>
     <script src="script.js"></script>
   </body>
