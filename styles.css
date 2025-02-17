@@ -173,7 +173,7 @@ nav a:hover {
 }
 
 .nav-links.mobile a {
-    margin: 15px 0;
+    margin: 15px 0; /* Espacement vertical entre les liens */
     padding: 15px 20px;
     font-size: 1.5em;
     color: var(--text-color);
@@ -181,7 +181,7 @@ nav a:hover {
     border-radius: var(--border-radius);
     transition: all 0.3s ease;
     background: var(--light-bg);
-    width: 80%;
+    width: 80%; /* Largeur relative à l'écran */
     text-align: center;
 }
 
@@ -189,17 +189,6 @@ nav a:hover {
     background: var(--highlight-color);
     color: var(--dark-bg);
     box-shadow: 0 0 10px var(--highlight-color);
-}
-
-/* Masquer le menu de navigation principal sur mobile */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
 }
 
 /* Project Grid */
@@ -281,13 +270,12 @@ nav a:hover {
     h1 {
         font-size: 2.5em;
     }
+    .nav-links {
+        display: none;
+    }
 
     .hamburger {
         display: flex;
-    }
-
-    .nav-links {
-        display: none;
     }
 
     .project-grid {
