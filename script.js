@@ -72,15 +72,23 @@ document.querySelectorAll("nav a").forEach((anchor) => {
   });
 });
 
-// // script.js
-// const hamburger = document.querySelector('.hamburger');
-// const navLinks = document.querySelector('.nav-links');
+// script.js
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links.mobile');
 
-// hamburger.addEventListener('click', () => {
-//     hamburger.classList.toggle('active');
-//     navLinks.classList.toggle('active');
-// });
-function downloadCV() {
-    const url = "https://enokseth.github.io/image/TOM-ARTAUD.pdf"; // Remplacez par le bon chemin du fichier
-    window.open(url, "_blank");
-  }
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Fermer le menu lorsqu'un lien est cliqué
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
+
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
